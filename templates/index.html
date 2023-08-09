@@ -7,21 +7,93 @@
     <title>최고오조 Instagram</title>
 
     <style>
+      .instagram-logo {
+        height: 50px;
+      }
+
       .container {
+        width: 50%;
+        margin: auto;
+        background-color: rgb(0, 0, 0);
+      }
+      @media (max-width: 1500px) {
+        .container {
+          width: 800px;
+        }
+      }
+
+      .story-container {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+      }
+
+      a:link {
+        text-decoration: none;
+        margin: 10px;
+      }
+
+      .story {
+        border-radius: 50px;
+      }
+
+      .story-round {
+        border: 5px solid rgb(237, 62, 62);
+        border-radius: 100px;
+        width: 150px;
+        height: 150px;
+        padding: 3px;
+      }
+
+      .story-round-name {
+        font-size: 20px;
+        color: white;
+      }
+
+      .content {
+        color: white;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div>
-        <a href="story1">story1</a>
-        <a href="story2">story2</a>
-        <a href="story3">story3</a>
-        <a href="story4">story4</a>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/sparta-myhoneytip-jiyeon2.appspot.com/o/images%2Finstagram.png?alt=media&token=4c408b1e-f5fc-4612-94d4-db6bb9df4c33"
+          alt=""
+          class="instagram-logo" />
       </div>
-      <div>content</div>
+      <div class="story-container">
+        <a href="story1" class="story"
+          ><img
+            src="https://firebasestorage.googleapis.com/v0/b/sparta-myhoneytip-jiyeon2.appspot.com/o/images%2Fphoto1.JPG?alt=media&token=b8448fc1-eb11-4818-8770-4ed1b571ecb7"
+            alt=""
+            class="story-round" />
+          <div class="story-round-name">최지연</div></a
+        >
+        <a href="story2" class="story"
+          ><img
+            src="https://firebasestorage.googleapis.com/v0/b/sparta-myhoneytip-jiyeon2.appspot.com/o/images%2Fphoto1.JPG?alt=media&token=b8448fc1-eb11-4818-8770-4ed1b571ecb7"
+            alt=""
+            class="story-round" />
+          <div class="story-round-name">story2</div></a
+        >
+        <a href="story3" class="story"
+          ><img
+            src="https://firebasestorage.googleapis.com/v0/b/sparta-myhoneytip-jiyeon2.appspot.com/o/images%2Fphoto1.JPG?alt=media&token=b8448fc1-eb11-4818-8770-4ed1b571ecb7"
+            alt=""
+            class="story-round" />
+          <div class="story-round-name">story3</div></a
+        >
+        <a href="story4" class="story"
+          ><img
+            src="https://firebasestorage.googleapis.com/v0/b/sparta-myhoneytip-jiyeon2.appspot.com/o/images%2Fphoto1.JPG?alt=media&token=b8448fc1-eb11-4818-8770-4ed1b571ecb7"
+            alt=""
+            class="story-round" />
+          <div class="story-round-name">story4</div></a
+        >
+      </div>
+      <div class="content">content</div>
     </div>
   </body>
 </html>
